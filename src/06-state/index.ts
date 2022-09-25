@@ -1,0 +1,23 @@
+import { Ticket } from './Ticket';
+
+const ticket = new Ticket(5);
+console.log(ticket.getState);
+console.log(ticket.next());
+ticket.add(6);
+console.log(ticket.getState);
+console.log(ticket.next());
+ticket.add(4);
+console.log(ticket.getState);
+console.log(ticket.next());
+console.log(ticket.next());
+ticket.add(3);
+console.log(ticket.getState);
+ticket.add(1);
+console.log(ticket.next());
+console.log(ticket.getState);
+console.log(ticket.next());
+console.log(ticket.next());
+console.log(ticket.next());
+console.log(ticket.next());
+console.log(ticket.getState);
+console.log(ticket.next());
